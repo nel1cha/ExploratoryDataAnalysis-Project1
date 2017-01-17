@@ -6,7 +6,7 @@ data <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec="
 subSetData <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 # Convert dates
-globalActivePower <- as.numeric(subSetData$Global_active_power)
+Global_active_power <- as.numeric(subSetData$Global_active_power)
 
 # Plot 1
 attach(data)
